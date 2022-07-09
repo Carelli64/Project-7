@@ -1,4 +1,4 @@
-const alertBanner = document.getElementById("alert");
+const alertBanner = document.querySelector(".alert");
 const trafficCanvas = document.querySelector('#traffic-chart');
 const dailyCanvas = document.getElementById("daily-chart");
 const mobileCanvas = document.getElementById("mobile-chart");
@@ -15,7 +15,7 @@ alertBanner.addEventListener('click', e => {
     if (element.classList.contains('alert-banner-close')) {
         alertBanner.style.display = 'none'
     }
-});
+    });
 
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
