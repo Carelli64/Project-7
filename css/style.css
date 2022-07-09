@@ -38,6 +38,7 @@
     width: 3.5rem;
     padding-left: 20px;
     padding-right: 10px;
+    fill: white;
   }
   
   .v-line {
@@ -348,7 +349,7 @@
   }
   
   .switch-light strong {
-  width: 250px;
+  width: 200px;
   align-self: center;
   }
   
@@ -566,6 +567,17 @@
             transform: scale(1.5);
             cursor: pointer;
         }
+        .grow::after {
+            top: 35px;
+            right: 8px;
+            position: absolute;
+            display: block;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: rgb(80, 250, 154);
+            border-radius: 50%;
+          }
   }
   
   @media (min-width: 1024px) {
@@ -630,7 +642,7 @@
         padding-left: 10px;
     }
     label.switch-light.switch-ios {
-        margin-top: 3rem;
+        margin-top: 3.1rem;
     }
     .form {
         margin-top: 4rem;
